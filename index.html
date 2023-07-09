@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>08-项目-黑马面面</title>
+    <!-- 引入初始化css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- 引入首页css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- 头部 -->
+    <header class="header">黑马面面</header>
+
+    <section class="nav_warp">
+        <!-- 导航 -->
+        <nav class="nav">
+            <a href="#">
+                <img src="./images/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#">
+                <img src="./images/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#">
+                <img src="./images/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#">
+                <img src="./images/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#">
+                <img src="./images/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#">
+                <img src="./images/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+        </nav>
+
+        <!-- 广告图 -->
+        <section class="go">
+            <img src="./upload/go.png" alt="">
+        </section>
+
+    </section>
+
+    <section class="content">
+        <div class="con-hd">
+            <h4>
+                <img src="./images/i2.png" alt="" class="icon">
+                <span>就业指导</span>
+            </h4>
+            <a href="#" class="more">更多>></a>
+        </div>
+
+        <!-- 旋转木马轮播图模块 -->
+        <div class="get_job_focus">
+            <!-- Swiper -->
+            <div class="swiper-container get_job_container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./upload/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./upload/ldh.jpg" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./upload/3.jpg" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 把分页按钮移出轮播容器 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+    <section class="content">
+        <div class="con-hd">
+            <h4>
+                <img src="./images/i1.png" alt="" class="icon">
+                <span>充电学习</span>
+            </h4>
+            <a href="#" class="more">更多>></a>
+        </div>
+
+        <!-- 学习模块轮播图 -->
+        <div class="study_focus">
+            <!-- Swiper -->
+            <div class="swiper-container study_container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./upload/pic1.png" alt="">
+                        <h5>说低调英语，告别中式英语</h5>
+                        <p>156人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./upload/pic2.png" alt="">
+                        <h5>说低调英语，告别中式英语</h5>
+                        <p>156人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./upload/pic1.png" alt="">
+                        <h5>说低调英语，告别中式英语</h5>
+                        <p>156人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./upload/pic1.png" alt="">
+                        <h5>说低调英语，告别中式英语</h5>
+                        <p>156人学习</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <a href="#">
+            <img src="./images/home.png" alt="">
+            <p>首页</p>
+        </a>
+        <a href="#">
+            <img src="./images/ms.png" alt="">
+            <p>技术面试</p>
+        </a>
+        <a href="#">
+            <img src="./images/net.png" alt="">
+            <p>模拟面试</p>
+        </a>
+        <a href="#">
+            <img src="./images/user.png" alt="">
+            <p>我的主页</p>
+        </a>
+    </footer>
+
+
+
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper.min.js"></script>
+
+    <script>
+        (function () {
+            var swiper = new Swiper('.get_job_container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        })();
+
+        // 第二个函数的轮播图
+        (function () {
+            //  如果有多个轮播图最好修改下 swiper-container
+            var swiper = new Swiper(".study_container", {
+                // 我们可以可以看看到的是 2个半
+                slidesPerView: 2.3,
+                spaceBetween: 20,
+            });
+        })();
+    </script>
+</body>
+
+</html>

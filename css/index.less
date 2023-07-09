@@ -1,0 +1,233 @@
+body {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #f2f4f7;
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 37.5px !important;
+    }
+}
+
+.header {
+    height: 2.1333rem;
+    line-height: 2.1333rem;
+    border-bottom: 1px solid #EAEAEA;
+    background-color: white;
+    color: #1C1C1C;
+    text-align: center;
+    font-size: .9333rem;
+}
+
+.nav_warp {
+    background-color: #fff;
+    margin-bottom: .2667rem;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5867rem 0 .8rem;
+
+    a {
+        display: flex;
+        // 转换成竖向排列
+        flex-direction: column;
+        // 侧轴居中
+        align-items: center;
+        width: 33.33%;
+
+        &:nth-child(-n+3) {
+            padding-bottom: .8rem;
+        }
+
+        img {
+            width: 1.8667rem;
+            height: 1.8667rem;
+        }
+
+        span {
+            margin-top: .2667rem;
+            font-size: .666667rem;
+        }
+    }
+}
+
+.go {
+    margin: 0 .2667rem;
+}
+
+.content {
+    padding: 1.066667rem 0.64rem;
+    background-color: #fff;
+    margin-top: 0.266667rem;
+}
+
+.con-hd {
+    display: flex;
+    justify-content: space-between;
+    height: 1.0133rem;
+    line-height: 1.0133rem;
+    padding: 0 .2667rem;
+
+    h4 {
+        display: flex;
+        // 去除h的默认margin值
+        margin: 0;
+
+        .icon {
+            width: 1.0133rem;
+            height: 1.0133rem;
+        }
+
+        span {
+            margin-left: .2667rem;
+            font-size: .7467rem;
+        }
+    }
+
+    .more {
+        font-size: .5867rem;
+        color: #999;
+    }
+}
+
+.get_job_focus {
+    // 给轮播图的切换按钮定位使用
+    position: relative;
+    padding-top: .5333rem;
+    padding-bottom: 1.0667rem;
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+
+        // 限定轮播图的宽度
+        width: 14.4rem;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition: 300ms;
+        transform: scale(0.8);
+
+        // 转换成竖向排列
+        flex-direction: column;
+        // 设置透明度
+        opacity: .5;
+
+        a {
+            width: 9.013333rem;
+            height: 10.026667rem;
+        }
+
+        p {
+            width: 9.013333rem;
+            font-size: 0.666667rem;
+            margin-top: 0.64rem;
+            color: #333;
+        }
+    }
+
+    .swiper-slide-active,
+    .swiper-slide-duplicate-active {
+        transform: scale(1);
+        // 使中间选中的压住其它的
+        z-index: 1;
+        opacity: 1;
+    }
+}
+
+.study_focus {
+
+    padding-top: 1.0667rem;
+    padding-bottom: 3.2rem;
+
+    .study_container {
+        padding: 0.266667rem;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        font-size: 18px;
+        background: #fff;
+        width: 7.733333rem;
+        height: 9.066667rem;
+        background-color: #fff;
+        border-radius: 0.266667rem;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+
+        h5 {
+            font-size: 0.693333rem;
+            margin: 0.533333rem 0;
+            font-weight: 400;
+            padding: 0 0.266667rem;
+        }
+
+        p {
+            font-size: 0.693333rem;
+            color: #ff4400;
+            padding: 0 0.266667rem;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2.9333rem;
+    width: 100%;
+    min-width: 320px;
+    max-width: 750px;
+    justify-content: space-around;
+    border-top: 1px solid #EAEAEA;
+    background-color: #fff;
+    z-index: 99;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: .5333rem;
+
+        img {
+            width: 1.0667rem;
+            height: 1.093333rem;
+            margin-bottom: .16rem;
+        }
+
+        p {
+            font-size: .5867rem;
+            color: #666666;
+        }
+    }
+}
